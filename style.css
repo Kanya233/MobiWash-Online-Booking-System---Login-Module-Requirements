@@ -1,0 +1,233 @@
+
+
+.home-body {
+  background-color: #F1F1F1;
+  margin: auto;
+}
+
+.login-body {
+  background: #333;
+  margin: 0;
+  padding: 0;
+  font-family: "Montsrerrat", sans-serif;
+}
+
+.bg-container {
+  position: relative;
+}
+
+.bg-img {
+  width: 100%;
+  height: 100%;
+}
+
+/*LOGIN PAGE CSS*/
+
+
+.container {
+  width: 360px;
+  height: 600px;
+  background: url("../img/login-bg.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  border-radius: 14px;
+  border: solid white;
+}
+
+.container h1 {
+  font-size: 40px;
+  margin-top: 12px;
+  margin-bottom: 60px;
+  color: black;
+}
+
+.tbox {
+  width: 260px;
+  height: 40px;
+  background: #F1F1F1B3;
+  border-radius: 10px;
+  border: solid;
+  margin: 10px auto;
+  transition: 0.25s;
+}
+
+.tbox input {
+  background: none;
+  border: none;
+  outline: none;
+  text-align: center;
+  width: 90%;
+  line-height: 37px;
+  font-size: 14px;
+  color: #333;
+}
+
+.tbox:hover {
+  border-color: #42D4F5;
+}
+
+.btn {
+  width: 260px;
+  height: 40px;
+  background: #42D4F5;
+  border-radius: 10px;
+  margin: 14px auto;
+  display: block;
+  font-size: 16px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.btn:hover {
+  background: #525354;
+}
+
+.b1 {
+  display: block;
+  width: 260px;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  margin: auto;
+  transition: 0.4s;
+}
+
+.b1:hover {
+  background: #525354;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.b2 {
+  position: absolute;
+  bottom: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 260px;
+  text-align: center;
+  transition: 0.4s;
+  color: #42D4F5;
+}
+
+.b2:hover {
+  background: #525354;
+  padding: 15px;
+  border-radius: 10px;
+  /*ended here */
+}
+
+/* css for model */
+
+.modal {
+  display: none;
+  background-color: white;
+  position: absolute;
+  top: 33%;
+  left: 39%;
+  text-align: center;
+  padding: 2% 4%;
+  border-radius: 10px;
+  z-index: 999;
+}
+
+.nav-main {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #FFF;
+  display: flex;
+  z-index: 1000;
+}
+
+.btn-toggle-nav {
+  width: 60px;
+  height: 100%;
+  background-color: #F98F39;
+  background-image: url("../img/menu.png");
+  background-repeat: no-repeat;
+  background-size: 40%;
+  background-position: center;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.btn-toggle-nav:hover {
+  background-color: #42D4F5;
+  background-size: 50%;
+}
+
+.nav-main ul {
+  display: flex;
+  padding-left: 15px;
+}
+
+.nav-main ul li {
+  list-style: none;
+  line-height: 60px;
+}
+
+.nav-main ul li a {
+  text-decoration: none;
+  color: #111;
+  padding: 0 10px;
+}
+
+/* SIDEBAR */
+
+.nav-sidebar {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 50px;
+  height: calc(100vh - 60px);
+  background-color: #1B1B1B;
+  transition: 0.5s;
+  overflow: hidden;
+
+}
+
+.nav-sidebar ul {
+  padding-top: 15px;
+}
+
+.nav-sidebar ul li {
+  line-height: 60px;
+  list-style: none;
+}
+
+/* hidden by default */
+.nav-sidebar ul li a,
+.nav-sidebar ul li span {
+  display: block;
+  padding: 0 10px;
+  text-decoration: none;
+  color: white;
+  white-space: nowrap;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+/* show when open */
+.nav-sidebar.open {
+  width: 272px;
+}
+
+.nav-sidebar.open ul li a,
+.nav-sidebar.open ul li span {
+  opacity: 1;
+}
+
+/* TOGGLE ROTATION */
+
+.btn-toggle-nav.rotate {
+  transform: rotate(90deg);
+  transition: 0.25s;
+}
